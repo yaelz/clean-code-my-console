@@ -13,13 +13,15 @@ public class NumbersToSum {
 
         String str = "Sum of ";
 
-        int sum = 0;
-
         for (int i = 0; i < numbersToSum.length; i++) {
             str += numbersToSum[i] + ", ";
-            sum += Integer.parseInt(numbersToSum[0]);
         }
         str = str.substring(0, str.length() - 2);
+
+        int sum = 0;
+        for (int i = 0; i < numbersToSum.length; i++) {
+            sum += Integer.parseInt(numbersToSum[i]);
+        }
 
         str += " is " + sum;
         return str;
