@@ -16,16 +16,16 @@ public class MyConsole {
                 System.out.println(inputReader.readLine());
             } else if ("sum".equals(input)) {
                 System.out.println("Enter numbers to sum, separated by space. For example: '233 67 8 456086'");
-                String nToSIn = inputReader.readLine();
-                String[] nToS = nToSIn.split(" ");
+                String numbersToSumInput = inputReader.readLine();
+                String[] numbersToSum = numbersToSumInput.split(" ");
 
                 String str = "Sum of ";
 
                 int sum = 0;
 
-                for (int i = 0; i < nToS.length; i++) {
-                    str += nToS[i] + ", ";
-                    sum += Integer.parseInt(nToS[0]);
+                for (int i = 0; i < numbersToSum.length; i++) {
+                    str += numbersToSum[i] + ", ";
+                    sum += Integer.parseInt(numbersToSum[0]);
                 }
                 str = str.substring(0, str.length() - 2);
 
