@@ -21,7 +21,7 @@ public class NumbersToSum {
         }
         str = str.substring(0, str.length() - 2);
 
-        str += "is " + sum;
+        str += " is " + sum;
         return str;
     }
 }
