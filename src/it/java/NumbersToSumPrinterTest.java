@@ -9,13 +9,11 @@ import static org.junit.Assert.*;
 public class NumbersToSumPrinterTest {
     @Test
     public void testGetOutputStringForSingleNumber() throws Exception {
-        NumbersToSumPrinter numbersToSumPrinter = new NumbersToSumPrinter("2 2");
-        assertThat(numbersToSumPrinter.getOutputString(),is("Sum of 2, 2 is 4"));
+        assertThat(NumbersToSumPrinter.getOutputString("2 2"),is("Sum of 2, 2 is 4"));
     }
 
     @Test
     public void testGetOutputString() throws Exception {
-        NumbersToSumPrinter numbersToSum = new NumbersToSumPrinter("231 3");
-        assertThat(numbersToSum.getOutputString(),is("Sum of 231, 3 is 234"));
+        assertThat(NumbersToSumPrinter.getOutputString("231 3"),is("Sum of 231, 3 is 234"));
     }
 }

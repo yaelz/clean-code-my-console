@@ -18,7 +18,7 @@ public class MyConsole {
                 System.out.println("Enter numbers to sum, separated by space. For example: '233 67 8 456086'");
                 String numbersToSumInput = inputReader.readLine();
 
-                String str = new NumbersToSumPrinter(numbersToSumInput).getOutputString();
+                String str = NumbersToSumPrinter.getOutputString(numbersToSumInput);
                 System.out.println(str);
             }
         }

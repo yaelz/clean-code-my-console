@@ -9,8 +9,6 @@ import static org.junit.Assert.*;
 public class NumbersToSumTest {
     @Test
     public void testGetOutputString() throws Exception {
-        String[] numbers = {"4", "230"};
-        NumbersToSum numbersToSum = new NumbersToSum(numbers);
-        assertThat(numbersToSum.sum(),is(234));
+        assertThat(NumbersToSum.sum(4, 230),is(234));
     }
 }
