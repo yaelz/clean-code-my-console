@@ -12,16 +12,23 @@ public class MyConsole {
 
             String input = inputReader.readLine();
             if ("copycat".equals(input)) {
-                System.out.print(">");
-                System.out.println(inputReader.readLine());
+                printUserInput(inputReader);
             } else if ("sum".equals(input)) {
-                System.out.println("Enter numbers to sum, separated by space. For example: '233 67 8 456086'");
-                String numbersToSumInput = inputReader.readLine();
-
-                String str = NumbersToSumPrinter.getOutputString(numbersToSumInput);
-                System.out.println(str);
+                waitForInputAndSumNumbers(inputReader);
             }
         }
     }
 
+    private void waitForInputAndSumNumbers(BufferedReader inputReader) throws IOException {
+ֿ        System.out.println("Enter numbers to sum, separated by space. For example: '233 67 8 456086'");
+        String numbersToSumInput = inputReader.readLine();
+
+        String str = NumbersToSumPrinter.getOutputString(numbersToSumInput);
+        System.out.println(str);
+    }
+
+    private void printUserInput(BufferedReader inputReader) throws IOException {
+        System.out.print(">");
+        System.out.println(inputReader.readLine());
+    }
 }
