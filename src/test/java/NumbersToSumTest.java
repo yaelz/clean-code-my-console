@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
  */
 public class NumbersToSumTest {
     @Test
-    public void testGetOutputString() throws Exception {
-        assertThat(NumbersToSum.sum(4, 230),is(234));
+    public void testSumOfMoreThanOneNumber() throws Exception {
+        assertThat(NumbersToSum.sum(3, 231),is(234));
     }
 }
